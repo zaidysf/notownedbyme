@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/zaidyasyaf/Documents/Projects/notownedbyme/censorify',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package.tgz',
+9 verbose tar pack   '/Users/zaidyasyaf/Documents/Projects/notownedbyme/censorify' ]
+10 verbose tarball /Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package.tgz
+11 verbose folder /Users/zaidyasyaf/Documents/Projects/notownedbyme/censorify
+12 info prepublish censorify-cloned@0.1.1
+13 verbose addLocalTarball adding from inside cache /Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package.tgz
+14 silly cache afterAdd censorify-cloned@0.1.1
+15 verbose afterAdd /Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package/package.json not in flight; writing
+16 verbose afterAdd /Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package/package.json written
+17 silly publish { author: { name: 'Muhammad Zaid' },
+17 silly publish   name: 'censorify-cloned',
+17 silly publish   version: '0.1.1',
+17 silly publish   description: 'Censors words out of text',
+17 silly publish   main: 'censortext',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/zaidysf/notownedbyme/tree/master/censorify' },
+17 silly publish   keywords: [ 'censor', 'words' ],
+17 silly publish   dependencies: {},
+17 silly publish   engines: { node: '*' },
+17 silly publish   readme: 'This repository is just for training purpose, i don\'t own anything of these code. feel free to know me if some of this code must to be removed due the copyright policy.',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   _id: 'censorify-cloned@0.1.1',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: '0e8407d8458cc26315420ee0dbcd94f1a45b7b85',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name censorify-cloned
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/censorify-cloned
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/zaidyasyaf/.npm/censorify-cloned/0.1.1/package.tgz
+25 verbose request uri https://registry.npmjs.org/censorify-cloned
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 1:30:25 PM
+28 verbose request using bearer token for auth
+29 verbose request id b1947e6629c69224
+30 http request PUT https://registry.npmjs.org/censorify-cloned
+31 http 403 https://registry.npmjs.org/censorify-cloned
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '128',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 11 Feb 2016 06:30:26 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1455172225.764995,VS0,VE838' }
+33 verbose request invalidating /Users/zaidyasyaf/.npm/registry.npmjs.org/censorify-cloned on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.1.1. Try bumping the version to 1.0.0" : censorify-cloned
+35 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+36 verbose statusCode 403
+37 verbose pkgid censorify-cloned
+38 verbose cwd /Users/zaidyasyaf/Documents/Projects/notownedbyme/censorify
+39 error Darwin 14.5.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v4.3.0
+42 error npm  v2.14.12
+43 error code E403
+44 error "You cannot publish over the previously published version 0.1.1. Try bumping the version to 1.0.0" : censorify-cloned
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
